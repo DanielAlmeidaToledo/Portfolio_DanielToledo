@@ -1,3 +1,15 @@
+import NumberAnimation from "./NumberAnimation";
+import { TiPlus } from "react-icons/ti";
+
+import "../styles/components/aboutcontainer.sass";
+
+const Informations = [
+  { title: "Freelancers", value: 3 },
+  { title: "Projetos", value: 27 },
+  { title: "Commits", value: 320 },
+  { title: "Cursos e Certificados", value: 5 },
+];
+
 const AboutContainer = () => {
   return (
     <section className="about-container">
@@ -17,6 +29,19 @@ const AboutContainer = () => {
         individual, seja o trabalho de um time por completo, a comunicação entre
         ele e a sua eficiência.
       </p>
+      <div className="projects-grid">
+        {Informations.map((info) => {
+          return (
+            <div className="projects-card" key={info.title}>
+              <div className="projects-info">
+                <TiPlus />
+                <NumberAnimation value={info.value} />
+              </div>
+              <h3>{info.title}</h3>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 };

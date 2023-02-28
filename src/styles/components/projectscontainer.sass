@@ -1,29 +1,2 @@
 @use '../variables'
 @use '../mixins'
-    
-.projects-grid
-    display: flex
-    flex-wrap: wrap
-    gap: 1.5rem
-    @include mixins.center
-
-    .projects-card
-        @include mixins.center
-        gap: 0 1rem
-        margin: 0 1rem 1rem
-        border: 1px solid #333
-        border-radius: variables.$card-border-radius
-        color: variables.$text-color
-        display: flex
-        flex-wrap: wrap
-        width: 18%
-        height: 8rem
-
-        h3
-            margin: .7rem 0 1rem
-            width: 100%
-            text-align: center
-
-        svg
-            font-size: 300%
-            color: #EE3F61

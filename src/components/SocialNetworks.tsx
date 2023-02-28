@@ -1,8 +1,23 @@
-import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaGithub,
+  FaInstagram,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 import "../styles/components/socialnetworks.sass";
 
 const socialNetworks = [
+  {
+    name: "whatsapp",
+    icon: <FaWhatsapp />,
+    url: "https://wa.me/5515998485252",
+  },
+  {
+    name: "instagram",
+    icon: <FaInstagram />,
+    url: "https://www.instagram.com/danieltoledo_02/",
+  },
   {
     name: "linkedin",
     icon: <FaLinkedinIn />,
@@ -12,11 +27,6 @@ const socialNetworks = [
     name: "github",
     icon: <FaGithub />,
     url: "https://github.com/DanielAlmeidaToledo",
-  },
-  {
-    name: "instagram",
-    icon: <FaInstagram />,
-    url: "https://www.instagram.com/danieltoledo_02/",
   },
 ];
 

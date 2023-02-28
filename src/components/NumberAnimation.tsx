@@ -1,5 +1,7 @@
 import { useSpring, animated } from "@react-spring/web";
 
+import "../styles/components/numberanimation.sass";
+
 interface PropsNumber {
   value: number;
 }
@@ -12,7 +14,11 @@ const NumberAnimation = ({ value }: PropsNumber) => {
     config: { mass: 1, tension: 20, friction: 10 },
   });
 
-  return <animated.div>{number.to((value) => value.toFixed(0))}</animated.div>;
+  return (
+    <animated.div className="number">
+      {number.to((value) => value.toFixed(0))}
+    </animated.div>
+  );
 };
 
 export default NumberAnimation;

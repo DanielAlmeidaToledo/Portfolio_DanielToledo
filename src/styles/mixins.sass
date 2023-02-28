@@ -1,0 +1,35 @@
+@use 'variables'
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin btn
+    padding: 1rem 1.2rem
+    color: variables.$text-color
+    background: variables.$gradient
+    text-decoration: none
+    border-radius: 3rem
+
+@mixin gradient-border
+    content: ""
+    background: variables.$gradient
+    height: 3px
+    width: 30%
+
+@mixin sm 
+   @media (min-width: #{$screen-sm-min})
+       @content
+   
+@mixin md 
+   @media (min-width: #{$screen-md-min})
+       @content
+
+@mixin lg 
+   @media (min-width: #{$screen-lg-min}) 
+       @content
+
+@mixin xl 
+   @media (min-width: #{$screen-xl-min}) 
+       @content

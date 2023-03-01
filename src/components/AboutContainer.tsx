@@ -1,13 +1,13 @@
 import NumberAnimation from "./NumberAnimation";
-import { TiPlus } from "react-icons/ti";
+import { GoPlusSmall } from "react-icons/go";
 
 import "../styles/components/aboutcontainer.sass";
 
 const Informations = [
   { title: "Freelancers", value: 3 },
   { title: "Projetos", value: 27 },
-  { title: "Commits", value: 320 },
-  { title: "Cursos e Certificados", value: 5 },
+  { title: "Commits", value: 282 },
+  { title: "Cursos e Certificados", value: 11 },
 ];
 
 const AboutContainer = () => {
@@ -34,7 +34,7 @@ const AboutContainer = () => {
           return (
             <div className="projects-card" key={info.title}>
               <div className="projects-info">
-                <TiPlus />
+                <GoPlusSmall />
                 <NumberAnimation value={info.value} />
               </div>
               <h3>{info.title}</h3>

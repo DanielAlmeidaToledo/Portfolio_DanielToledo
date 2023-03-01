@@ -10,6 +10,7 @@ Portfólio desenvolvido para realizar um resumo do meu perfil profissional.
 - Typescript
 - React Icons
 - React Spring
+- React Slick
 - Sass
 - CSS
 - Vite

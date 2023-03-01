@@ -1,12 +1,31 @@
+@use '../mixins'
+@use '../variables'
+
 .carousel-container 
-    // background: red
-    // width: 50vh
-    // height: 40vh
+    @include mixins.center
+    flex-wrap: wrap 
+    text-align: center
+    color: variables.$text-color
 
     .carousel-item 
-        background: blue
-        margin: 2rem
+        width: 25rem
+        height: 14rem
+        margin: 1rem 2rem
 
-    img
-        width: 100%
-        height: 100%
+        .info-item
+            height: 100%
+            background: rgba(0, 0, 0, 0.8)
+            display: none
+
+            .btnProject 
+                margin: 0 auto
+
+            h3
+                font-size: 1.5rem
+                font-weight: 600
+                width: 100%
+
+        &:hover
+            .info-item
+                @include mixins.center
+                flex-wrap: wrap

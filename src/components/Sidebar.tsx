@@ -1,5 +1,6 @@
 import SocialNetWorks from "./SocialNetworks";
 import InformationContainer from "./InformationContainer";
+import Experience from "./Experience";
 
 import Avatar from "../assets/DanielToledo.jpg";
 import CV from "../assets/CVDanielToledo.pdf";
@@ -16,6 +17,7 @@ const Sidebar = () => {
       <a href={CV} download={CV} className="btn">
         Download Currículo
       </a>
+      <Experience />
     </aside>
   );
 };

@@ -58,25 +58,8 @@ const projects = [
 ];
 
 const Carousel = () => {
-  const settings = {
-    customPaging: function (i: number) {
-      return (
-        <a>
-          <img src={`${baseUrl}/project0${i + 1}.png`} />
-        </a>
-      );
-    },
-    dots: true,
-    dotsClass: "slick-dots slick-thumb",
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <div className="carousel-container">
-      {/* <Slider {...settings}> */}
       {projects.map((project) => {
         const { title, image, github } = project;
         return (
@@ -98,7 +81,6 @@ const Carousel = () => {
           </div>
         );
       })}
-      {/* </Slider> */}
     </div>
   );
 };

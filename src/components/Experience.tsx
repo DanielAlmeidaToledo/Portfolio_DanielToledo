@@ -1,4 +1,5 @@
 import "../styles/components/experience.sass";
+import * as Tabs from "@radix-ui/react-tabs";
 
 const Experiences = [
   {
@@ -8,13 +9,31 @@ const Experiences = [
   },
   {
     role: "Estagiário de Desenvolvimento",
-    company: "BNE",
+    company: "BNE - Banco Nacional de Empregos",
     date: "2022 - 2023",
   },
   {
     role: "Assistente de Vendas",
-    company: "Megaplasma",
+    company: "Megaplasma Comercial",
     date: "2020 - 2022",
+  },
+  {
+    role: "Monitor de Matemática",
+    company: "IFSP- Campus Boituva",
+    date: "2019",
+  },
+];
+
+const Courses = [
+  {
+    role: "Análise e Desenvolvimento de Sistemas",
+    company: "IFSP - Campus Boituva",
+    date: "2022 - 2024",
+  },
+  {
+    role: "Técnico em Redes de Computadores",
+    company: "IFSP - Campus Boituva",
+    date: "2017 - 2019",
   },
 ];
 
@@ -23,7 +42,48 @@ const Experience = () => {
     <div className="experience-container">
       <h2>Experiências</h2>
 
-      <div className="experiences-list">
+      <Tabs.Root className="TabsRoot" defaultValue="tab1">
+        <Tabs.List className="TabsList" aria-label="Manage your account">
+          <Tabs.Trigger className="TabsTrigger" value="tab1">
+            Profissionais
+          </Tabs.Trigger>
+          <Tabs.Trigger className="TabsTrigger" value="tab2">
+            Acadêmicas
+          </Tabs.Trigger>
+        </Tabs.List>
+        <Tabs.Content className="TabsContent" value="tab1">
+          <div className="experiences-list">
+            {Experiences.map((experience) => {
+              const { role, company, date } = experience;
+              return (
+                <div className="experience-item" key={company}>
+                  <div className="circle"></div>
+                  <h3>{role}</h3>
+                  <span>{company}</span>
+                  <p>{date}</p>
+                </div>
+              );
+            })}
+          </div>
+        </Tabs.Content>
+        <Tabs.Content className="TabsContent" value="tab2">
+          <div className="experiences-list">
+            {Courses.map((experience) => {
+              const { role, company, date } = experience;
+              return (
+                <div className="experience-item" key={company}>
+                  <div className="circle"></div>
+                  <h3>{role}</h3>
+                  <h4>{company}</h4>
+                  <p>{date}</p>
+                </div>
+              );
+            })}
+          </div>
+        </Tabs.Content>
+      </Tabs.Root>
+
+      {/* <div className="experiences-list">
         {Experiences.map((experience) => {
           const { role, company, date } = experience;
           return (
@@ -35,7 +95,7 @@ const Experience = () => {
             </div>
           );
         })}
-      </div>
+      </div>*/}
     </div>
   );
 };

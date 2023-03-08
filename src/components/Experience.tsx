@@ -3,23 +3,23 @@ import * as Tabs from "@radix-ui/react-tabs";
 
 const Experiences = [
   {
-    role: "Desenvolvendor Front-end Júnior",
-    company: "TPrime Tecnologia",
+    role: "Desenvolvedor Front-end Júnior",
+    company: "TPrime | Goevo",
     date: "2023 - Até o momento",
   },
   {
     role: "Estagiário de Desenvolvimento",
-    company: "BNE - Banco Nacional de Empregos",
+    company: "BNE",
     date: "2022 - 2023",
   },
   {
     role: "Assistente de Vendas",
-    company: "Megaplasma Comercial",
+    company: "Megaplasma",
     date: "2020 - 2022",
   },
   {
     role: "Monitor de Matemática",
-    company: "IFSP- Campus Boituva",
+    company: "IFSP - Campus Boituva",
     date: "2019",
   },
 ];
@@ -34,6 +34,26 @@ const Courses = [
     role: "Técnico em Redes de Computadores",
     company: "IFSP - Campus Boituva",
     date: "2017 - 2019",
+  },
+  {
+    role: "NLW - Setup",
+    company: "Rocketseat",
+    date: "2023",
+  },
+  {
+    role: "NLW - eSports",
+    company: "Rocketseat",
+    date: "2022",
+  },
+  {
+    role: "React.JS Completo",
+    company: "Udemy",
+    date: "2022",
+  },
+  {
+    role: "Projetos ágeis com Scrum",
+    company: "DIO",
+    date: "2022",
   },
 ];
 
@@ -74,7 +94,7 @@ const Experience = () => {
                 <div className="experience-item" key={company}>
                   <div className="circle"></div>
                   <h3>{role}</h3>
-                  <h4>{company}</h4>
+                  <span>{company}</span>
                   <p>{date}</p>
                 </div>
               );
@@ -82,20 +102,6 @@ const Experience = () => {
           </div>
         </Tabs.Content>
       </Tabs.Root>
-
-      {/* <div className="experiences-list">
-        {Experiences.map((experience) => {
-          const { role, company, date } = experience;
-          return (
-            <div className="experience-item" key={company}>
-              <div className="circle"></div>
-              <h3>{role}</h3>
-              <h4>{company}</h4>
-              <p>{date}</p>
-            </div>
-          );
-        })}
-      </div>*/}
     </div>
   );
 };

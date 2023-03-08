@@ -50,12 +50,19 @@
                 height: 1rem
                 border-radius: 50%
                 border: 1px solid variables.$default-color
-                background: variables.$bg-color
+                box-shadow: 1px 0px 10px 2px variables.$default-color
+                background: variables.$default-color
                 cursor: pointer
 
             h3
                 width: 100%
                 margin: .5rem 0
+
+            span, p
+                color: #e3e3e3
+
+            p
+                margin: .2rem 0
 
             &:nth-child(odd)
                 float: left

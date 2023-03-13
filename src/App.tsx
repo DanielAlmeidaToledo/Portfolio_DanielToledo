@@ -1,8 +1,8 @@
-import HomeContainer from "./components/HomeContainer";
-import MainContent from "./components/MainContent";
-import Sidebar from "./components/Sidebar";
+import HomeContainer from "./components/HomeContainer/HomeContainer";
+import MainContent from "./components/MainContent/MainContent";
+import Sidebar from "./components/Sidebar/Sidebar";
 
-import "./styles/components/app.sass";
+import "./styles/abstracts/app.sass";
 
 function App() {
   return (

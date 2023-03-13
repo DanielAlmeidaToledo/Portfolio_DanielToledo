@@ -1,0 +1,32 @@
+@use '../../styles/mixins'
+@use '../../styles/variables'
+
+.carousel-container 
+    @include mixins.center
+    flex-wrap: wrap 
+    text-align: center
+    color: variables.$text-color
+
+    .carousel-item 
+        width: 26vw
+        height: 16rem
+        margin: 1rem auto
+
+        .info-item
+            height: 100%
+            background: rgba(0, 0, 0, 0.8)
+            display: none
+
+            .btnProject 
+                margin: 0 auto
+
+            h3
+                font-size: 1.5rem
+                font-weight: 600
+                width: 100%
+                margin-top: 1.5rem
+
+        &:hover
+            .info-item
+                @include mixins.center  
+                flex-wrap: wrap

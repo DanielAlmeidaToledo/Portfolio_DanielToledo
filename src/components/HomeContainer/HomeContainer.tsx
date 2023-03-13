@@ -23,7 +23,7 @@ const HomeContainer = () => {
   return (
     <div className="mainDiv">
       <h1>Daniel Toledo</h1>
-      <span>Front-end Developer</span>
+      <span>Frontend Developer</span>
       <svg style={{ position: "absolute", width: 0, height: 0 }}>
         <filter id="goo">
           <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="30" />

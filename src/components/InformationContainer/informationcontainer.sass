@@ -1,5 +1,6 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
+@use '../../styles/abstracts/breakpoints'
 
 #information
     @include mixins.center
@@ -41,6 +42,9 @@
 
         #email-icon
             color: #6ab5b9
+
+            @include breakpoints.sm
+                width: 7rem
 
         #pin-icon
             color: #c17ceb

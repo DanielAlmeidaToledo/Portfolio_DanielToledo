@@ -1,4 +1,7 @@
 import * as Tabs from "@radix-ui/react-tabs";
+import { AiOutlineCalendar } from "react-icons/ai";
+import { MdOutlineSchool } from "react-icons/md";
+import { HiOutlineCode } from "react-icons/hi";
 
 import "./experience.sass";
 
@@ -10,12 +13,12 @@ const Experiences = [
   },
   {
     role: "Estagiário de Desenvolvimento",
-    company: "BNE",
+    company: "BNE - Banco Nacional de Empregos",
     date: "2022 - 2023",
   },
   {
     role: "Assistente de Vendas",
-    company: "Megaplasma",
+    company: "Megaplasma Comercial",
     date: "2020 - 2022",
   },
   {
@@ -80,8 +83,14 @@ const Experience = () => {
                 <div className="experience-item" key={company}>
                   <div className="circle"></div>
                   <h3>{role}</h3>
-                  <span>{company}</span>
-                  <p>{date}</p>
+                  <span>
+                    <HiOutlineCode className="icon-experiences" size={20} />
+                    {company}
+                  </span>
+                  <p>
+                    <AiOutlineCalendar className="icon-experiences" size={20} />
+                    {date}
+                  </p>
                 </div>
               );
             })}
@@ -95,8 +104,14 @@ const Experience = () => {
                 <div className="experience-item" key={company}>
                   <div className="circle"></div>
                   <h3>{role}</h3>
-                  <span>{company}</span>
-                  <p>{date}</p>
+                  <span>
+                    <MdOutlineSchool className="icon-experiences" size={20} />
+                    {company}
+                  </span>
+                  <p>
+                    <AiOutlineCalendar className="icon-experiences" size={20} />
+                    {date}
+                  </p>
                 </div>
               );
             })}

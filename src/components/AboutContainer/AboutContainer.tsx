@@ -4,9 +4,9 @@ import { GoPlusSmall } from "react-icons/go";
 import "./aboutcontainer.sass";
 
 const Informations = [
-  { title: "Freelancers", value: 3 },
+  { title: "Freelancers", value: 5 },
   { title: "Projetos", value: 27 },
-  { title: "Commits", value: 282 },
+  { title: "Commits", value: 322 },
   { title: "Cursos e Certificados", value: 11 },
 ];
 

@@ -1,5 +1,6 @@
 @use '../../styles/mixins'
 @use '../../styles/variables'
+@use '../../styles/abstracts/breakpoints'
 
 .carousel-container 
     @include mixins.center
@@ -11,6 +12,10 @@
         width: 26vw
         height: 16rem
         margin: 1rem auto
+    
+        @include breakpoints.sm
+            width: 100%
+            height: 8rem
 
         .info-item
             height: 100%
@@ -20,11 +25,16 @@
             .btnProject 
                 margin: 0 auto
 
+                @include breakpoints.sm
+
             h3
                 font-size: 1.5rem
                 font-weight: 600
                 width: 100%
                 margin-top: 1.5rem
+
+                @include breakpoints.sm
+                    font-size: 1.3rem
 
         &:hover
             .info-item

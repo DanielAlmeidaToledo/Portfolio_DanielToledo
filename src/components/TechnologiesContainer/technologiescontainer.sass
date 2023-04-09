@@ -1,5 +1,6 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
+@use '../../styles/abstracts/breakpoints'
 
 .technologies-container
     margin-bottom: 1rem
@@ -16,6 +17,9 @@
             border: 1px solid #333
             width: 45%
             border-radius: variables.$card-border-radius
+        
+            @include breakpoints.sm
+                width: 100%
 
             .technology-info
                 width: 80%

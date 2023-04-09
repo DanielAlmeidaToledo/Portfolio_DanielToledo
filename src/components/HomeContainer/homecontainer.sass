@@ -1,13 +1,13 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
+@use '../../styles/abstracts/breakpoints'
     
 .mainDiv
     margin: -3rem
     margin-bottom: 3rem
-    width: 110%
+    width: 100%
     height: 100vh
     background-image: url('../../assets/background.png')
-    background-size: 100%
     background-position: center
     display: flex
     flex-direction: column
@@ -15,15 +15,28 @@
     flex-wrap: wrap 
     text-align: center
 
+    @include breakpoints.sm
+        width: 120%
+
     h1, span
         width: 100%
         background: variables.$gradient
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
 
+        @include breakpoints.sm
+            margin: 2rem 0
+
     h1
         font-size: 8rem
+
+        @include breakpoints.sm
+            font-size: 5rem
+            margin: 0 auto
 
     span
         font-size: 2rem
         width: 100%
+
+        @include breakpoints.sm
+            font-size: 1.7rem

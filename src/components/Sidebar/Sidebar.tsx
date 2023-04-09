@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <aside id="sidebar">
       <img src={Avatar} alt="Imagem Daniel Toledo"></img>
-      <p className="title">Desenvolvedor Front-end</p>
+      <p className="title">Frontend Developer</p>
       <SocialNetWorks />
       <InformationContainer />
       <a href={CV} download={CV} className="btn">

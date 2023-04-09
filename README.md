@@ -2,7 +2,7 @@
 
 Portfólio desenvolvido para realizar um resumo do meu perfil profissional.
 
-- 🌐 Link: https://portfolio-danieltoledo.vercel.app/
+- 🌐 Link: https://danieltoledo.vercel.app/
 
 ## ⚙️ Linguagens e Ferramentas utilizadas:
 

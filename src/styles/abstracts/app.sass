@@ -1,8 +1,12 @@
 @use '../variables'
 @use '../mixins'
+@use '../abstracts/breakpoints'
 
 #portfolio
     display: flex
     flex-wrap: wrap
     padding: 3rem
     gap: 3rem
+
+    @include breakpoints.sm
+        padding: 0

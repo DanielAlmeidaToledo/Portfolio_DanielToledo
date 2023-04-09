@@ -7,6 +7,11 @@ import "./experience.sass";
 
 const Experiences = [
   {
+    role: "Desenvolvedor FullStack",
+    company: "Smartplace",
+    date: "2023 - Até o momento",
+  },
+  {
     role: "Desenvolvedor Front-end Júnior",
     company: "TPrime | Goevo",
     date: "2023 - Até o momento",

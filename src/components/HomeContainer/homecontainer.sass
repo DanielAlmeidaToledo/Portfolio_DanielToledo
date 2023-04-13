@@ -41,3 +41,24 @@
 
         @include breakpoints.sm
             font-size: 1.7rem
+
+    .arrow 
+        position: absolute
+        inset: auto 1rem 1rem auto
+        width: 4rem
+        background: variables.$gradient
+        border-radius: 1rem 
+        border: 3px solid transparent
+        transition: all 0.5s ease-in-out
+
+        &:hover
+            border: 3px solid #ffffff
+
+        img
+            width: 100%
+            cursor: pointer
+            transition: all 0.3s ease-in-out
+
+            &:hover
+                transform: scale(1.1)
+                fill: #ffffff

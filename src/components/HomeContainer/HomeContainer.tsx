@@ -1,6 +1,9 @@
 import styles from "../../styles/abstracts/styles.module.css";
 import "./homecontainer.sass";
 
+import arrow from "../../assets/arrow.svg";
+import { Link } from "react-scroll";
+
 import useMeasure from "react-use-measure";
 import { useTrail, animated } from "@react-spring/web";
 
@@ -20,6 +23,8 @@ const HomeContainer = () => {
     api.start({ xy: [e.clientX - left, e.clientY - top] });
   };
 
+  const { innerWidth: width } = window;
+
   return (
     <div className="mainDiv">
       <h1>Daniel Toledo</h1>
@@ -38,6 +43,16 @@ const HomeContainer = () => {
           <animated.div key={index} style={{ transform: props.xy.to(trans) }} />
         ))}
       </div>
+      <Link
+        className="arrow"
+        to={innerWidth > 1000 ? "main-content" : "sidebar"}
+        spy={true}
+        smooth={true}
+        offset={-90}
+        duration={700}
+      >
+        <img src={arrow} alt="Seta" />
+      </Link>
     </div>
   );
 };

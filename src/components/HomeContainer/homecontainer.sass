@@ -7,8 +7,6 @@
     margin-bottom: 3rem
     width: 100%
     height: 100vh
-    background-image: url('../../assets/background.png')
-    background-position: center
     display: flex
     flex-direction: column
     justify-content: center
@@ -41,6 +39,29 @@
 
         @include breakpoints.sm
             font-size: 1.7rem
+
+    .mainItem
+        width: 60%
+        height: 100%
+        @include mixins.center
+        flex-wrap: wrap
+        flex-direction: column
+
+        @include breakpoints.sm
+            width: 100%
+            height: 40%
+
+    .mainImg
+        width: 40%
+        height: 70%
+        background: url('../../assets/bgDaniel.png') no-repeat center
+        background-size: 100%
+        filter: opacity(0.9)
+
+        @include breakpoints.sm
+            width: 100%
+            height: 40%
+            background-size: 80%
 
     .arrow 
         position: absolute

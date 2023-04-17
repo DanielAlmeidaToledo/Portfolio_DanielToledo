@@ -4,8 +4,8 @@ import { GoPlusSmall } from "react-icons/go";
 import "./aboutcontainer.sass";
 
 const Informations = [
-  { title: "Freelancers", value: 5 },
-  { title: "Projetos", value: 27 },
+  { title: "Projetos Freelancers", value: 5 },
+  { title: "Projetos Pessoais", value: 27 },
   { title: "Commits", value: 322 },
   { title: "Cursos e Certificados", value: 11 },
 ];
@@ -18,7 +18,7 @@ const AboutContainer = () => {
         Meu nome é Daniel Almeida de Toledo, tenho 20 anos e moro no interior de
         São Paulo, mais precisamente na cidade de Boituva. Mas não quero deixar
         essa seção de Sobre entediante, então por isso vou relatar um pouco
-        sobre quem sou eu, a minha personalidade e como isso influência em
+        sobre quem sou eu, a minha personalidade e como isso influencia em
         minhas atividades.
       </p>
       <p>

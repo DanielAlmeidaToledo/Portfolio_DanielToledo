@@ -10,7 +10,7 @@ const NumberAnimation = ({ value }: PropsNumber) => {
   const { number } = useSpring({
     from: { number: 0 },
     number: value,
-    delay: 200,
+    delay: 1000,
     config: { mass: 1, tension: 20, friction: 10 },
   });
 

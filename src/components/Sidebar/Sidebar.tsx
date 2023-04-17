@@ -3,7 +3,6 @@ import SocialNetWorks from "../SocialNetworks/SocialNetworks";
 import Experience from "../Experience/Experience";
 
 import Avatar from "../../assets/DanielToledo.jpg";
-import CV from "../../assets/CVDanielToledo.pdf";
 
 import "./sidebar.sass";
 
@@ -14,7 +13,11 @@ const Sidebar = () => {
       <p className="title">Frontend Developer</p>
       <SocialNetWorks />
       <InformationContainer />
-      <a href={CV} download={CV} className="btn">
+      <a
+        href="https://drive.google.com/file/d/1sJ-Mkay8ptrjrX2WI7uNumUWj0-tUYVK/view?usp=sharing"
+        target="_blank"
+        className="btn"
+      >
         Download Currículo
       </a>
       <Experience />

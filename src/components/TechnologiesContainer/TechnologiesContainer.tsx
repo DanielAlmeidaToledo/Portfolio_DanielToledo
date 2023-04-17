@@ -7,7 +7,7 @@ import {
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
-  SiJquery,
+  SiJest,
   SiBootstrap,
 } from "react-icons/si";
 
@@ -21,10 +21,10 @@ const technologies = [
     text: "Components, Hooks, Reduce, Context, Router, Listas, API's.",
   },
   {
-    id: "angular",
-    name: "Angular",
-    icon: <SiAngular color="#C4002B" />,
-    text: "Components, Renderização, Interface, Diretivas, Listas.",
+    id: "typescript",
+    name: "Typescript",
+    icon: <SiTypescript color="#3178C6" />,
+    text: "Interface, Type, Props.",
   },
   {
     id: "next",
@@ -33,10 +33,10 @@ const technologies = [
     text: "Components, Nested Routes, API's.",
   },
   {
-    id: "typescript",
-    name: "Typescript",
-    icon: <SiTypescript color="#3178C6" />,
-    text: "Interface, Type, Props.",
+    id: "angular",
+    name: "Angular",
+    icon: <SiAngular color="#C4002B" />,
+    text: "Components, Renderização, Interface, Diretivas, Listas.",
   },
   {
     id: "node",
@@ -49,12 +49,6 @@ const technologies = [
     name: "JavaScript",
     icon: <DiJsBadge color="#f0db4f" />,
     text: "DOM, Functions, Objects, API's, Local Storage, JSON.",
-  },
-  {
-    id: "jquery",
-    name: "jQuery",
-    icon: <SiJquery color="#0769ad" />,
-    text: "Eventos, Ajax, JSON, Local Storage.",
   },
   {
     id: "tailwind",
@@ -74,7 +68,14 @@ const technologies = [
     icon: <SiBootstrap color="#6E2CF1" />,
     text: "Grids, Cards, Alerts, Tables",
   },
+  {
+    id: "jest",
+    name: "Jest.JS",
+    icon: <SiJest color="#C63D14" />,
+    text: "Testes unitários.",
+  },
 ];
+
 const TechnologiesContainer = () => {
   return (
     <section className="technologies-container">

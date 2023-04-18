@@ -2,7 +2,7 @@ import InformationContainer from "../InformationContainer/InformationContainer";
 import SocialNetWorks from "../SocialNetworks/SocialNetworks";
 import Experience from "../Experience/Experience";
 
-import Avatar from "../../assets/DanielToledo2.jpg";
+import Avatar from "../../assets/DanielToledo.jpg";
 
 import "./sidebar.sass";
 

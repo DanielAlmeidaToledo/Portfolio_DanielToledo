@@ -85,7 +85,7 @@ const Experience = () => {
             {Experiences.map((experience) => {
               const { role, company, date } = experience;
               return (
-                <div className="experience-item" key={company}>
+                <div className="experience-item" key={company + role}>
                   <div className="circle"></div>
                   <h3>{role}</h3>
                   <span>
@@ -106,7 +106,7 @@ const Experience = () => {
             {Courses.map((experience) => {
               const { role, company, date } = experience;
               return (
-                <div className="experience-item" key={company}>
+                <div className="experience-item" key={company + role}>
                   <div className="circle"></div>
                   <h3>{role}</h3>
                   <span>

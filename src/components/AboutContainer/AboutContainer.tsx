@@ -7,7 +7,7 @@ const Informations = [
   { title: "Projetos Freelancers", value: 5 },
   { title: "Projetos Pessoais", value: 27 },
   { title: "Commits", value: 322 },
-  { title: "Cursos e Certificados", value: 11 },
+  { title: "Certificados", value: 11 },
 ];
 
 const AboutContainer = () => {

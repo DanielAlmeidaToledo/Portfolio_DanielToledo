@@ -8,7 +8,8 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiJest,
-  SiBootstrap,
+  SiPython,
+  SiAmazonaws,
 } from "react-icons/si";
 
 import "./technologiescontainer.sass";
@@ -27,10 +28,16 @@ const technologies = [
     text: "Interface, Type, Props.",
   },
   {
-    id: "next",
-    name: "Next.JS",
-    icon: <SiNextdotjs color="#FFFFFF" />,
-    text: "Components, Nested Routes, API's.",
+    id: "python",
+    name: "Python",
+    icon: <SiPython color="#FFD43B" />,
+    text: "Flask, Pandas.",
+  },
+  {
+    id: "node",
+    name: "Node.JS",
+    icon: <SiNodedotjs color="#44883e" />,
+    text: "Rotas, Express, NestJS, API's.",
   },
   {
     id: "angular",
@@ -39,34 +46,16 @@ const technologies = [
     text: "Components, Renderização, Interface, Diretivas, Listas.",
   },
   {
-    id: "node",
-    name: "Node.JS",
-    icon: <SiNodedotjs color="#44883e" />,
-    text: "Rotas, Express, API's.",
+    id: "next",
+    name: "Next.JS",
+    icon: <SiNextdotjs color="#FFFFFF" />,
+    text: "Components, Nested Routes, API's.",
   },
   {
-    id: "js",
-    name: "JavaScript",
-    icon: <DiJsBadge color="#f0db4f" />,
-    text: "DOM, Functions, Objects, API's, Local Storage, JSON.",
-  },
-  {
-    id: "tailwind",
-    name: "Tailwind CSS",
-    icon: <SiTailwindcss color="#38BDF8" />,
-    text: "Animações, Responsividade, Media Queries.",
-  },
-  {
-    id: "sass",
-    name: "Sass",
-    icon: <DiSass color="#CD6799" />,
-    text: "Variables, Mixins, Includes.",
-  },
-  {
-    id: "bootstrap",
-    name: "Bootstrap",
-    icon: <SiBootstrap color="#6E2CF1" />,
-    text: "Grids, Cards, Alerts, Tables",
+    id: "aws",
+    name: "AWS Services",
+    icon: <SiAmazonaws color="#FF9900" />,
+    text: "S3 Bucket, Lambda, SNS, DynamoDB.",
   },
   {
     id: "jest",

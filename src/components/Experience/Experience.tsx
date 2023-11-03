@@ -7,29 +7,34 @@ import "./experience.sass";
 
 const Experiences = [
   {
+    role: "IT Intern - Automation",
+    company: "BTG Pactual",
+    date: "09/2023 - Até o momento",
+  },
+  {
     role: "Desenvolvedor FullStack",
     company: "Smartplace",
-    date: "2023 - Até o momento",
+    date: "02/2023 - Até o momento",
   },
   {
     role: "Desenvolvedor Front-end Júnior",
     company: "TPrime | Goevo",
-    date: "2023 - Até o momento",
+    date: "02/2023 - 09/2023",
   },
   {
     role: "Estagiário de Desenvolvimento",
     company: "BNE - Banco Nacional de Empregos",
-    date: "2022 - 2023",
+    date: "08/2022 - 02/2023",
   },
   {
     role: "Assistente de Vendas",
     company: "Megaplasma Comercial",
-    date: "2020 - 2022",
+    date: "08/2020 - 08/2022",
   },
   {
     role: "Monitor de Matemática",
     company: "IFSP - Campus Boituva",
-    date: "2019",
+    date: "01/2019 - 07/2019",
   },
 ];
 

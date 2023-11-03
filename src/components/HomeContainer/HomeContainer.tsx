@@ -29,7 +29,7 @@ const HomeContainer = () => {
     <div className="mainDiv">
       <div className="mainItem">
         <h1>Daniel Toledo</h1>
-        <span>Frontend Developer</span>
+        <span>Software Developer</span>
       </div>
       <div className="mainImg"></div>
       <svg style={{ position: "absolute", width: 0, height: 0 }}>

@@ -5,9 +5,9 @@ import "./aboutcontainer.sass";
 
 const Informations = [
   { title: "Projetos Freelancers", value: 5 },
-  { title: "Projetos Pessoais", value: 29 },
-  { title: "Commits", value: 417 },
-  { title: "Certificados", value: 11 },
+  { title: "Projetos Pessoais", value: 33 },
+  { title: "Commits", value: 617 },
+  { title: "Certificados", value: 12 },
 ];
 
 const AboutContainer = () => {
@@ -15,7 +15,7 @@ const AboutContainer = () => {
     <section className="about-container">
       <h2>Sobre</h2>
       <p>
-        Meu nome é Daniel Almeida de Toledo, tenho 20 anos e moro no interior de
+        Meu nome é Daniel Almeida de Toledo, tenho 21 anos e moro no interior de
         São Paulo, mais precisamente na cidade de Boituva. Mas não quero deixar
         essa seção de Sobre entediante, então por isso vou relatar um pouco
         sobre quem sou eu, a minha personalidade e como isso influencia em
